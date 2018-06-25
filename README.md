@@ -18,3 +18,7 @@ Purpose of this project is to provide serverless microservice implementation usi
 # Prerequisites
   - Create an AWS account [https://aws.amazon.com/]
   - Configure AWS CLI [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html]
+
+# Design and Implementation
+  - Command (invoke) pattern is used to invoke service as requested by API gateway
+  - Service is designed & implemented carefully to improve the testability. Thus making it more maintainable, robust.
