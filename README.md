@@ -13,8 +13,16 @@ Purpose of this project is to provide serverless microservice implementation usi
 - Build Tool
   - Gradle
 - Unit Testing
-  - Junit, Hamcrest, Mockito
+  - Junit
 
 # Prerequisites
   - Create an AWS account [https://aws.amazon.com/]
   - Configure AWS CLI [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html]
+  
+# Architecture
+![](https://image.ibb.co/exrk0T/Untitled_Diagram_2.png)
+
+
+# Design and Implementation
+  - Command (invoke) pattern is used to invoke service as requested by API gateway
+  - Service is designed & implemented carefully to improve the testability. Thus making it more maintainable, robust.
