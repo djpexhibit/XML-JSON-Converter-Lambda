@@ -20,6 +20,8 @@ dependencies {
 	compile 'com.amazonaws:aws-lambda-java-log4j2:1.0.0'
 	compile 'org.json:json:20171018'
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+
 
 
     testCompile 'junit:junit:4.12'
