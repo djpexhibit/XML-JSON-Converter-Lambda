@@ -20,7 +20,7 @@ Purpose of this project is to provide serverless microservice implementation usi
   - Configure AWS CLI [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html]
   
 # Architecture
-![](https://ibb.co/cGXEuo)
+![](https://image.ibb.co/exrk0T/Untitled_Diagram_2.png)
 
 
 # Design and Implementation
