@@ -41,6 +41,7 @@ public class LambdaFunctionHandler implements RequestStreamHandler {
 			final AbstractServiceInvoker invoker= INVOKER_UTIL.getInvoker(request);
 			final Response response = invoker.invoke(request);
 
+			LOG.info("Response: " + response.toJSON());
 			response.send(output, context);
 
 

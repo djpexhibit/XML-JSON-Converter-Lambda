@@ -23,13 +23,13 @@ public class JSONToXMLInvoker extends AbstractServiceInvoker{
 	
 	public static String convert(String json, String root) throws JSONException
     {
-		LOG.info(json);
         JSONObject jsonFileObject = new JSONObject(json);
-        LOG.info(jsonFileObject);
-        String xml = "{ \"te\":\"<?xml version=\'1.0\' encoding=\'UTF-8\' ?>"
-        				+ "<p:DCTRequest xmlns:p='http://www.dhl.com' xmlns:p1='http://www.dhl.com/datatypes' xmlns:p2='http://www.dhl.com/DCTRequestdatatypes' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.dhl.com DCT-req.xsd '>"
+
+        String xml = "{ \"genXML\":\"<?xml version=\'1.0\' encoding=\'UTF-8\' ?>"
+        				+ "<"+root + " "
+        				+ "<xmlns:p='http://www.test.com' xmlns:p1='http://www.test.com/datatypes' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.test.com DCT-req.xsd '>"
         				+ org.json.XML.toString(jsonFileObject) 
-        				+ "</p:DCTRequest>\"}";
+        				+ "</+ root + >\"}";
         return xml;
     }
 
