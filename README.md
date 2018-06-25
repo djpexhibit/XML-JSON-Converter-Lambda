@@ -13,7 +13,7 @@ Purpose of this project is to provide serverless microservice implementation usi
 - Build Tool
   - Gradle
 - Unit Testing
-  - Junit, Hamcrest, Mockito
+  - Junit
 
 # Prerequisites
   - Create an AWS account [https://aws.amazon.com/]
