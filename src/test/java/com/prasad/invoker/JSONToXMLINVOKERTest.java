@@ -13,7 +13,7 @@ public class JSONToXMLINVOKERTest {
         assertEquals("{ \"genXML\":\"<?xml version=\'1.0\' encoding=\'UTF-8\' ?>"
         				+ "<test>"
         				+ "test" 
-        				+ "</test>\"}", jsonToXMLInvoker.convert("{test:test}"), "10 x 0 must be 0");
+        				+ "</test>\"}", jsonToXMLInvoker.convert("{test:test}"), "Valid JSON with XML string should be generated");
 
 	}
 
