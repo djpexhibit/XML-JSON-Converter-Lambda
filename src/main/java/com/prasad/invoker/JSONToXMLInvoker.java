@@ -17,19 +17,17 @@ public class JSONToXMLInvoker extends AbstractServiceInvoker{
 	@Override
 	public Response invoke(Request request) throws Exception {
 		JsonElement bodyEle = request.getJsonObject().get("body");
-		String xmlgen = convert(bodyEle.getAsString(), "root");
+		String xmlgen = convert(bodyEle.getAsString());
 		return new Response().withBody(xmlgen);
 	}
 	
-	public static String convert(String json, String root) throws JSONException
+	public static String convert(String json) throws JSONException
     {
         JSONObject jsonFileObject = new JSONObject(json);
 
         String xml = "{ \"genXML\":\"<?xml version=\'1.0\' encoding=\'UTF-8\' ?>"
-        				+ "<"+root + " "
-        				+ "<xmlns:p='http://www.test.com' xmlns:p1='http://www.test.com/datatypes' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.test.com DCT-req.xsd '>"
         				+ org.json.XML.toString(jsonFileObject) 
-        				+ "</+ root + >\"}";
+        				+ "\"}";
         return xml;
     }
 
