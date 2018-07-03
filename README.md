@@ -15,25 +15,25 @@ Purpose of this project is to provide serverless microservice implementation usi
 - Unit Testing
   - Junit
 
-# Prerequisites
+## Prerequisites
   - Create an AWS account [https://aws.amazon.com/]
   - Configure AWS CLI [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html]
   
-# Architecture
+## Architecture
 ![](https://image.ibb.co/dFqXwd/converter.png)
 
-# Design and Implementation
+## Design and Implementation
   - Command (invoke) pattern is used to invoke service as requested by API gateway
   - Service is designed & implemented carefully to improve the testability. Thus making it more maintainable, robust.
 
-# API endpoints 
+## API endpoints 
 
 | Resource | `POST` |
 | ------ |  ------ | 
 | `/v1/json-to-xml` | Convert JSON to XML output | 
 | `/v1/xml-to-json` | Convert XML to JSON |
 
-# Sample Request / Response
+## Sample Request / Response
 
 Following shows a sample a request for the resource `/v1/json-to-xml` for the `POST` operation.
 
@@ -49,4 +49,4 @@ Following shows a sample a request for the resource `/v1/json-to-xml` for the `P
 }
 ```
 
-# Note : In json-to-xml, response is in json format which includes generated XML as a string value to support API gateway in order to track requests/responses
+### Note : In json-to-xml, response is in json format which includes generated XML as a string value to support API gateway in order to track requests/responses
