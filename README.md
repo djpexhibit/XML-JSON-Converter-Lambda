@@ -2,12 +2,12 @@
 
 ## Overview
 
-`XML-JSON-Converter-Lambda` is a general purpose lambda implementation of converting XML - JSON. This implemented as a microservice on top of `AWS`. 
+`XML-JSON-Converter-Lambda` is a sample lambda implementation of converting XML - JSON. This implemented as a microservice on top of `AWS`. 
 
 Purpose of this project is to provide serverless microservice implementation using the following technologies.
 
 - AWS Services
-  - AWS API Gateway, Lambda and DynamoDB
+  - AWS API Gateway and Lambda
 - Programming Language
   - JAVA 8
 - Build Tool
@@ -20,8 +20,7 @@ Purpose of this project is to provide serverless microservice implementation usi
   - Configure AWS CLI [http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html]
   
 # Architecture
-![](https://image.ibb.co/exrk0T/Untitled_Diagram_2.png)
-
+![](https://image.ibb.co/dFqXwd/converter.png)
 
 # Design and Implementation
   - Command (invoke) pattern is used to invoke service as requested by API gateway
